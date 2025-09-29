@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Wilcham construction</title>
+    
+
+
+    <style>
+        /* Reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* general */
+        body{
+            line-height: 1.5;
+        }
+        /*Header*/
+        header{
+            position: fixed;
+            background-color: grey;
+            top: 0;
+            z-index: 100;
+            padding: 20px;
+            color: #fff;
+            width: 100%;
+            height: auto;
+            
+        }
+        header  .Menu{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 27pc;
+            
+        }
+        header div ul{
+            display: flex;
+            list-style-type: none;
+            gap: 35px;
+            margin-top: 25px;
+            
+        }
+        
+
+        header h1{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        header h1 span{
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+        header div nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.05rem;
+        }
+        header div nav ul li a:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: white;
+            text-underline-offset: 5px;
+        }
+
+         header div nav ul li a:active{
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: white;
+            text-underline-offset: 5px;
+        }
+
+        /*Hero section*/
+        .hero{
+        position: relative;
+         height: 600px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+        .hero-section{
+            position: absolute;
+            z-index: 10;
+            color: #fff;
+            margin-top: 100px;
+            margin-left: 50px;
+
+        }
+
+        .hero-image{
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 1000px;
+            opacity: 0.75;
+            
+            
+
+        }
+        .hero .hero-section h1{
+            font-size: 3.5rem;
+            font-weight: bold;
+            
+        }
+         .hero .hero-section h1 span{
+            display: block;
+            line-height: 1.3;
+            margin-right: 30px;
+         }
+       
+        .hero .hero-section p{
+            margin-top: 15px;
+            margin-bottom: 25px;
+            
+        } 
+        .button{
+            text-decoration: none;
+            color: #fff;
+            border-radius: 15px;
+            background-color: peru;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+        }
+        .button:hover{
+            border-style: solid;
+            border-color: black;
+            background-color: white;
+            color: peru;
+            border-width: 1px;
+        }
+        .button:active{
+            opacity: 0.3;
+        }
+        .line{
+            background-color: black;
+            width: 90%;
+            z-index: 1;
+            margin: 35px 55px;
+            height: 0.4px;
+        }
+        /* about us*/
+
+         .About-us{
+            display: flex;
+            margin-top: 50px;
+            position: relative;
+            justify-content: space-between;
+            gap: 15px;
+            
+         }
+
+         .About-section{
+           
+            line-height: 1.6;
+            margin: 30px 30px;
+            align-items: space-between;
+            
+         }
+         .About-us .About-section h1{
+            font-size: 3.5rem;
+            color: black;
+            margin-bottom: 15px;
+            font-weight: bold;
+         }
+        
+             .About-us .About-section p{
+                font-size: 1.1rem;
+                margin-bottom: 50px;
+             }
+             .About-us .About-section a{
+                border-radius: 15px;
+                padding: 20px 30px;
+                background-color: peru;
+                text-decoration: none;
+                color: #fff;
+                
+             }
+             .About-us .About-section a:hover{
+             border-style: solid;
+            border-color: black;
+            background-color: white;
+            color: peru;
+            border-width: 1px;
+
+             }
+            .About-us .About-section a:active{
+                opacity: 0.3;
+             }
+    
+         .About-us img{
+            margin: 15px 95px;
+            width: 100%;
+            height: 700px;
+            
+            object-fit: cover;
+            border-radius: 5px;
+            
+         }
+         /*Our Services*/
+         .services{
+            margin-top: 50px;
+            line-height: 1.6;
+            margin-left: 30px;
+         }
+
+         .services h1{
+            font-size: 3.5rem;
+            color: black;
+            font-weight: bold;
+         }
+         .services p{
+            font-size: 1.1rem;
+            color: peru;
+         }
+         .services-img{
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin-top: 30px;
+            margin-bottom: 150px;
+         }
+         
+          
+        .services-img div img{
+            width: 100%;
+            height: 400px;
+              border-radius: 5px;
+            box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            
+            
+        }
+        .services-img div h4{
+            margin-top: 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .services-img div p{
+            font-size: 0.9rem;
+        }
+        .our-services-btn{
+            background-color: peru;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-left: 550px;
+        }
+         .our-services-btn:hover{
+            border-style: solid;
+            border-color: black;
+            background-color: white;
+            color: peru;
+            border-width: 1px;
+        }
+        .our-services-btn:active{
+            opacity: 0.3;
+        }
+        .testimonials-section{
+            display: flex;
+            justify-content: space-between;
+            margin: 100px 0;
+            gap: 250px;
+
+        }
+        .testimonials-section h1{
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: black ;
+            margin-left: 50px;
+        }
+
+        .testimonials-review{
+            display: block;
+            margin-left: 50px;
+            
+
+        }
+         .testimonials-section .testimonials-review div{
+            margin: 25px 0;
+         }
+
+        .testimonials-section .testimonials-review div img{
+            width: 5%;
+            border-radius: 100%;
+            height: auto;
+            margin: 5px 0;
+        }
+        .testimonials-section .testimonials-review div hr{
+            width: auto;
+            margin: 20px 0;
+        }
+    .testimonials-section .testimonials-review div span{
+        font-size: 0.75rem;
+    }
+     .key-offerings h1{
+        margin-bottom: 65px;
+        font-size: 3.5rem;
+        margin-left: 50px;
+        font-weight: bold;
+     }
+
+    .key-offerings-section{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 50px 50px;
+        
+    }
+    .key-offerings .key-offerings-section div h3{
+       font-size: 1.7rem;
+       line-height: 1.6;
+    }
+    .key-offerings .key-offerings-section div p{
+        font-size: 0.95rem;
+        margin-top: 15px;
+        }
+        /* Contact us */
+        .contact-us{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 400px;
+           margin: 50px, 80px;
+        }
+        .contact-us h1{
+            font-size: 3.5rem;
+        }
+        .contact-us-section{
+            display: flex;
+            margin-top: 100px;
+            gap: 10px;
+        }
+        label.required::after{
+            content: '*';
+            color: black;
+        }
+        .contact-us-section div input{
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 500px;
+            outline: none;
+            box-shadow: none;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        
+            
+        }
+        .underline-input{
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 800px;
+            outline: none;
+            box-shadow: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+      .input-div{
+        margin: 10px 50px;
+        
+      }
+      .message{
+         border: none;
+            border-bottom: 1px solid #000;
+            width: 800px;
+            outline: none;
+            box-shadow: none;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            
+            
+      }
+
+      .submit{
+        padding: 12px 100px;
+        font-size: 1rem;
+        background-color: peru;
+        border: none;
+        border-radius: 25px;
+        margin-left: 50px;
+        cursor: pointer;
+      } 
+      .submit:hover{
+         border-style: solid;
+            border-color: black;
+            background-color: white;
+            color: peru;
+            border-width: 1px;
+      }
+      .submit:active{
+        opacity: 0.3;
+      }
+      footer{
+        background-color: rgb(218, 217, 217);
+        margin-top: 30px;
+        padding-bottom: 35px;
+        padding-top: 35px;
+        height: auto;
+        
+      }
+      footer .footer{
+        margin-left: 40px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+      }
+      footer h1{
+        font-size: 4rem;
+        
+      }
+      footer h1 span{
+        font-size: 3rem;
+        
+      }
+      footer div p{
+        font-size: 0.95rem;
+      }
+      .last-footer{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 40px;
+         display: flex;
+         gap: 535px;
+      }
+      .privacy p{
+        font-size: 0.83rem;
+      }
+
+      div i{
+        margin: auto 10px;
+      }
+
+.icon-footer{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 35px;
+   
+    
+}
+.icon-footer p{
+    margin-left: 600px;
+    font-size: 0.83rem;
+}
+.icon-footer p a{
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <div class="Menu">
+            <h1> W<span>ilcham</span></h1>
+            <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About-us">About us</a></li>
+                <li><a href="#our_services">Our services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            </nav>
+        </div> 
+    </header>
+     <!--Home page-->
+    <section id="home" class="hero">
+        <div class="hero-section">
+            <h1><span>Expert Constructing</span> <span>Solution</span>
+            </h1>
+            <p>We give the best constructing solution</p>
+            <a href="#our_services" class="button">Get Started</a>
+
+        </div>
+        <img src="construction.jpg" alt="Construction image" class="hero-image">
+    </section>
+    <br>
+    <hr class="line">
+
+    <!--About us page-->
+
+    <section id="#About-us" class="About-us">
+        <div class="About-section">
+            <h1>About our services</h1>
+            <p>At Wilcham, we are dedicated to providing the best construction solutions tailored to meet the unique needs of every client. With a strong commitment to quality, innovation, and reliability, we handle every project with precision and care-from design to completion. <br><br>
+              Our team of skilled professionals brings years of experience in delivering durable structures, modern design, and cost-effective solutions. Whether it's residential, commercial, or industrial projects, we ensure that every detail reflects excellence. <br><br>
+              We don't just build structures, we build trust, lasting relationships, and a solid foundation for your future.  
+
+            </p>
+            <a href="#testimonials" class="btn">Check Reviews</a>
+
+        </div>
+       
+        <img src="construction crew 1.jpg" alt="construction crew" >
+        
+      
+        
+    </section>
+    <hr class="line">
+    <section id="#our_services" class="services">
+    <h1> Our Services</h1>
+        <p>What we offer</p>
+        <div class="services-img">
+
+            <div>
+            <img src="our services 1.jpg" alt="construction services">
+            <h4>Scrapers Construction</h4>
+            <p>Quality Scrapers Solution</p>
+            </div>
+
+            <div>
+            <img src="our services 2.jpg" alt="construction services">  
+            <h4>Bridge Construction</h4>
+            <p>Quality Bridge Solution</p>
+            </div>
+            
+            <div>
+            <img src="our services 3.jpg" alt="construction services">
+            <h4>Building Construction</h4>
+            <p>Quality Building Solution</p>
+
+            </div>
+
+
+        </div>
+
+        <a href="#our_services" class="our-services-btn"> Check our services</a>
+
+
+    </section>
+    <hr class="line">
+
+    <section id="#testimonials" class="testimonials-section">
+        <h1>Testimonials</h1>
+        <div class="testimonials-review">
+
+            <div>
+                <img src="corporate profile 1.jpg" alt="testimonial response">
+                <p>Working with Wilcham on our new headquarters was an outstanding experience. Their team demonstrated precision, professionalism, and the ability to deliver on time despite a very tight schedule. The skyscraper they built for us has become a landmark in the city, and we could not be more impressed with the quality and attention to detail."<br><br>
+               <span> Michael Roberts, CEO, Horizon Group</span></p>
+               <hr>
+            </div>
+
+              <div>
+                <img src="corporate profile 2.jpg" alt="testimonial response">
+                <p>We entrusted Wilcham with the construction of a major bridge project, and they exceeded expectations at every stage. From planning to execution, their expertise, safety standards, and efficiency were evident. The bridge has greatly improved connectivity in the region and stands as a testament to their engineering excellence."<br><br>
+                <span> Engr. Fatima Sule, State Ministry of Works</span></p>
+                <hr>
+            </div>
+
+             <div>
+                <img src="corporate profile 3.jpg" alt="testimonial response">
+                <p>Our real estate development required both residential and commercial buildings, and Wilcham delivered beyond expectations. Their ability to handle complex designs, manage resources, and maintain clear communication made the entire process seamless. The final structures are modern, durable, and exactly what we envisioned."<br><br>
+                        <span>David Osei, Managing Director, Prime Developments Ltd.</span></p>
+                        <hr>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <div class="key-offerings">
+        <h1>Key Offering</h1>
+
+        <div class="key-offerings-section">
+
+        <div>
+            <h3>Quality<br> Workmanship</h3>
+            <p>We deliver projects built to last by combining top-grade materials with modern techniques, ensuring every detail from the foundation to the finishing touches meets the highest standards of durability and safety.</p>
+        </div>
+
+        <div>
+            <h3>Customer<br> Satisfaction</h3>
+            <p>Your vision is at the heart of everything we do, and we achieve this through clear communication, transparency, timely delivery, and a strong commitment to building not just quality structures but lasting relationships.</p>
+        </div>
+
+        <div>
+            <h3>Expert Team</h3>
+            <p>Our expert team of engineers, architects, and builders brings years of experience, creativity, and precision to every project, working with efficiency and dedication to deliver outstanding results.</p>
+        </div>
+
+            </div>
+
+    </div>
+    <hr class="line">
+ 
+    <section id="#contact" >
+
+        <div class="contact-us">
+        <h1>Get In Touch</h1>
+        <p>For any inquiries or to request a quote for your construction needs, <br>feel free to fill out the form below. we will get back to you promptly</p>
+        
+            </div>
+            
+
+        <div class="contact-us-section">
+
+        <div class="input-div">
+             <label for="name" class="required">First Name</label><br>
+            <input type="name" id="name" name="firstname" required>
+            
+           
+        </div>
+     
+        <div class="input-div">
+             <label for="name" >Last Name</label><br>
+            <input type="name" id="name" name="lastname" >
+            
+           
+        </div>
+        
+
+       
+
+        </div>
+
+         <div class="input-div">
+             <label for="email" class="required" >Email address</label><br>
+            <input type="email" id="email" name="emailaddress" class="underline-input" required>
+            
+           
+        </div>
+
+         <div class="input-div">
+             <label for="message" class="required" >Write a message</label><br>
+            <input type="text" id="message" name="message" class="message" required>
+            
+           
+        </div>
+
+        <div>
+            <input type="submit" id="submit" name="Submit" class="submit">
+        </div>
+
+    </section>
+
+
+    <footer>
+        
+        <div class="footer">
+        <h1>W<span>ilcham</span></h1>
+        </div>
+
+        <div class="footer">
+        <p>&#43;1 (415) 987-6543</p>
+        <p>wilcham@buildpro.com</p>
+        </div>
+
+        <div class="last-footer">
+
+        <div >
+        <p>245 Market Street, Suite 400</p>
+        <p>San Francisco, CA 94105</p>
+        </div>
+        <div class="privacy">
+            <p>Privacy policy</p>
+            <p>Accessibility statement</p>
+        </div>
+
+        </div>
+
+    <div class="icon-footer">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-tiktok"></i>
+    <p>&copy; 2025 Copyright all right reserved. Powered and secured by <a href="#About">Wilcham </a></p>
+
+
+    </div>  
+       
+    </footer>
+</body>
+</html>
